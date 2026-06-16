@@ -30,6 +30,7 @@
             scroll-behavior: smooth;
         }
     </style>
+<link href="/assets/site.css" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -111,10 +112,10 @@
                         "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
                         "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
                         "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
-                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "0", "fontWeight": "700"}],
                         "headline-md-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
                         "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "600"}]
                     }
                 }
             }
@@ -126,9 +127,7 @@
 <header class="bg-surface dark:bg-surface text-primary dark:text-primary-fixed font-body-md text-body-md w-full sticky top-0 border-b border-outline-variant dark:border-outline z-40 transition-all duration-200 hidden md:block">
 <div class="flex justify-between items-center px-gutter max-w-max-width mx-auto h-20">
 <!-- Brand -->
-<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">
-                Poyatos Martínez Pintores
-            </div>
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="/">Poyatos Martínez Pintores</a>
 <!-- Navigation Links -->
 <nav class="hidden md:flex gap-6 items-center">
 <a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/">Inicio</a>
@@ -139,8 +138,8 @@
 </nav>
 <!-- Actions -->
 <div class="hidden md:flex gap-4 items-center">
-<button class="text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity font-label-sm text-label-sm uppercase tracking-widest border border-primary px-4 py-2 min-h-[48px] flex items-center justify-center">Llamar ahora</button>
-<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed hover:opacity-80 transition-opacity font-label-sm text-label-sm uppercase tracking-widest px-6 py-2 min-h-[48px] flex items-center justify-center shadow-sm">Pedir presupuesto</button>
+<a class="site-button text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity font-label-sm text-label-sm uppercase tracking-widest border border-primary px-4 py-2 min-h-[48px] flex items-center justify-center" data-action="call" href="/contacto/#solicitar">Llamar ahora</a>
+<a class="site-button bg-tertiary-fixed-dim text-on-tertiary-fixed hover:opacity-80 transition-opacity font-label-sm text-label-sm uppercase tracking-widest px-6 py-2 min-h-[48px] flex items-center justify-center shadow-sm" href="/contacto/#solicitar">Pedir presupuesto</a>
 </div>
 </div>
 </header>
@@ -149,11 +148,21 @@
 <div class="font-headline-md-mobile text-headline-md-mobile font-bold tracking-tight">
             Poyatos Martínez
         </div>
-<span class="material-symbols-outlined text-primary">menu</span>
+<button aria-controls="mobile-menu" aria-expanded="false" class="text-primary" data-mobile-menu-toggle type="button"><span class="material-symbols-outlined text-primary">menu</span></button>
 </header>
+<nav class="site-mobile-menu bg-surface px-margin-mobile py-4 md:hidden" hidden id="mobile-menu">
+<div class="grid gap-3">
+<a class="py-2 text-primary" href="/">Inicio</a>
+<a class="py-2 text-primary" href="/servicios/">Servicios</a>
+<a class="py-2 text-primary" href="/trabajos/">Trabajos</a>
+<a class="py-2 text-primary" href="/empresa/#proceso">Proceso</a>
+<a class="py-2 text-primary" href="/empresa/">Empresa</a>
+<a class="py-2 text-primary font-semibold" href="/contacto/">Contacto</a>
+</div>
+</nav>
 <main class="w-full">
 <!-- Hero Section -->
-<section class="max-w-max-width mx-auto px-margin-mobile md:px-gutter pt-12 md:pt-24 pb-12">
+<section id="trabajos" class="max-w-max-width mx-auto px-margin-mobile md:px-gutter pt-12 md:pt-24 pb-12">
 <div class="max-w-3xl">
 <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6">
                     Nuestros Trabajos: Resultados que Hablan por Sí Solos
@@ -164,22 +173,22 @@
 </div>
 </section>
 <!-- Category Filter -->
-<section class="max-w-max-width mx-auto px-margin-mobile md:px-gutter mb-12">
+<section id="filtros" class="max-w-max-width mx-auto px-margin-mobile md:px-gutter mb-12">
 <div class="flex flex-wrap gap-3">
-<button class="bg-primary text-on-primary font-label-sm text-label-sm px-5 py-2 rounded-full border border-primary transition-colors">Todos</button>
-<button class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors">Pintura Interior</button>
-<button class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors">Fachadas</button>
-<button class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors">Reformas</button>
-<button class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors">Lacados</button>
-<button class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors">Suelos</button>
-<button class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors">Papel Pintado</button>
+<button aria-pressed="true" class="bg-primary text-on-primary font-label-sm text-label-sm px-5 py-2 rounded-full border border-primary transition-colors" data-filter="todos" type="button">Todos</button>
+<button aria-pressed="false" class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors" data-filter="interior" type="button">Pintura Interior</button>
+<button aria-pressed="false" class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors" data-filter="fachadas" type="button">Fachadas</button>
+
+<button aria-pressed="false" class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors" data-filter="lacados" type="button">Lacados</button>
+<button aria-pressed="false" class="bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm px-5 py-2 rounded-full border border-outline-variant transition-colors" data-filter="suelos" type="button">Suelos</button>
+
 </div>
 </section>
 <!-- Gallery Grid -->
-<section class="max-w-max-width mx-auto px-margin-mobile md:px-gutter mb-section-desktop">
+<section id="galeria" class="max-w-max-width mx-auto px-margin-mobile md:px-gutter mb-section-desktop">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 <!-- Card 1 -->
-<article class="group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden">
+<article class="work-card group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden" data-category="interior">
 <div class="relative overflow-hidden aspect-[4/3] bg-surface-variant">
 <img alt="Vivienda unifamiliar con paredes blancas impecables" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A pristine, light-filled living room in a modern minimalist home showcasing flawless white painted walls. Sunlight streams through large windows, highlighting the smooth, expert finish of the paint job. The space features elegant, understated furniture in neutral tones, perfectly complementing the crisp white backdrop. The overall aesthetic is clean, professional, and sophisticated, reflecting high-end artisanal craftsmanship in interior design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqs8iuehyYs89Y4KIDLfsSsrXdReXSE-cUwDTfVDddrgFiSFTrZWmz8lMEh2yjXdhQv7NaiDjpGtH17oVkdbTz8Pu49cRj26Vn-x7YOxQSvX7k6T1QTP6-jvv-805KQKp7pp-SgyJxcOIYuJEDmKkI65EMn40AOQQSdyxX7hIP_hB6TxWQyKSgIn5FRkQbguUJYs8KGd3_OWfEZ7RA08K2NQzDylCmIvOCwKfEWsnsNerv2eevY1z_cMLuD-IpPpIctFcAYmBG0vE"/>
 </div>
@@ -192,7 +201,7 @@
 </div>
 </article>
 <!-- Card 2 -->
-<article class="group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden">
+<article class="work-card group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden" data-category="fachadas">
 <div class="relative overflow-hidden aspect-[4/3] bg-surface-variant">
 <img alt="Fachada de edificio histórico restaurada" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully restored historic building facade bathed in warm, natural sunlight. The exterior showcases an impeccable paint job in subtle, earthy tones that respect its architectural heritage while looking freshly maintained. Delicate moldings and architectural details are highlighted by the clean, sharp application of paint. The visual style is professional, grounded, and evokes a sense of lasting quality and careful restoration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYvIh-t4022yHhOI9gQmxxS_nk6XAotUy7NNBgYdm2Oi31A7E_YUak8sSOjSTFDPpJ35lOA7xSncnIrK_YvQvKQDOAxRPB2RbxcXu270a1HyBCb622BbXW5tBL6_34TTP2wJFwZoH1cqsOZ9jHStm6geTnfTQFG5XocImKD3K4EeLicEfcudOmZUT48Jv4cc0-9_xSG_i14jYwYcV8u0PmErEQRMfQaQBTDuctKTu11vOH4x3j3BAKr_yNS2x74IPXgx_duvajCwY"/>
 </div>
@@ -205,7 +214,7 @@
 </div>
 </article>
 <!-- Card 3 -->
-<article class="group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden">
+<article class="work-card group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden" data-category="lacados">
 <div class="relative overflow-hidden aspect-[4/3] bg-surface-variant">
 <img alt="Puertas lacadas en blanco brillante" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up view of interior wooden doors newly lacquered in a brilliant, flawless white finish. The surface is smooth and reflects soft indoor lighting, demonstrating artisanal precision and zero brush strokes. The surrounding hallway is styled in a minimalist, modern aesthetic with soft gray walls. The mood is pristine, fresh, and highlights the transformative power of professional woodwork lacquering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBvk0vT7VA0FzJP9XYjcOrN8dceEkYG-EHc5tFzx10eaWevqhVeVBHJtZeo_3oxPPrVSsfEfpp4kNsu9NjHuBAFQpwkJKnejvnF9efPstnvf_nQw5ZNTi0zmAeqjxKZIRZF-n0BN73m4ex5QD3YG1VT9HPOAxHq2aRkIl0ZZjxP30Pp7xQq2X-nQvvpRhZD_FjDSk5gj2LSD0IDs6Ww3qhSd3Y_jCFxBXxOrE0KiRgJe2jwItmB3k79ECErieKOOf1JwrJghb1Byc"/>
 </div>
@@ -218,7 +227,7 @@
 </div>
 </article>
 <!-- Card 4 -->
-<article class="group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden">
+<article class="work-card group bg-surface-container-lowest border border-outline-variant flex flex-col overflow-hidden" data-category="suelos">
 <div class="relative overflow-hidden aspect-[4/3] bg-surface-variant">
 <img alt="Suelo de resina epoxi continuo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide angle shot of a modern loft space featuring a seamless, glossy epoxy resin floor in a soft, cool gray tone. The floor acts as a perfect, reflective canvas for the minimalist furniture scattered thoughtfully around the room. The lighting is diffused and architectural, emphasizing the smooth, continuous surface without joints. The aesthetic communicates high-end modern professionalism and pristine cleanliness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiHE_-YrEQCEWRyqXblERWIQouK_w7aICl0zQneiCfEFm4zQVN_2W6iUn5gJ42brOYHWcdoP5wiYPeKjeNjja9cO_usHK10kx4xnI6IhguVlExaCJFoz3qDX5FaK03hBU0Vou6eIFrgXqf5mm7rwrNyJnqg_YDiYVlReGAbk9jD_I6Rkgbryx1hrtcj9h1aEn6aoXHe2yX1rDXed2N40JKnk5JXU-ED6mcbCX2e5YItgYony4x3UkcS3U27fiELgEhqB2h96GbbIE"/>
 </div>
@@ -231,9 +240,10 @@
 </div>
 </article>
 </div>
+<p class="filter-empty text-on-surface-variant text-center py-12" data-filter-empty hidden>No hay proyectos visibles con este filtro.</p>
 </section>
 <!-- Social Proof Section -->
-<section class="w-full bg-surface-container-lowest border-y border-outline-variant py-section-desktop mb-section-desktop">
+<section id="confianza" class="w-full bg-surface-container-lowest border-y border-outline-variant py-section-desktop mb-section-desktop">
 <div class="max-w-max-width mx-auto px-margin-mobile md:px-gutter text-center">
 <span class="material-symbols-outlined text-primary text-5xl mb-6" data-weight="fill">verified</span>
 <h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary max-w-3xl mx-auto">
@@ -245,7 +255,7 @@
 </div>
 </section>
 <!-- Final CTA -->
-<section class="max-w-max-width mx-auto px-margin-mobile md:px-gutter mb-section-desktop text-center">
+<section id="presupuesto" class="max-w-max-width mx-auto px-margin-mobile md:px-gutter mb-section-desktop text-center">
 <div class="bg-surface-container-low p-12 md:p-24 border border-outline-variant flex flex-col items-center">
 <h2 class="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-primary mb-6 max-w-2xl">
                     ¿Quiere un resultado similar en su espacio?
@@ -253,9 +263,7 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
                     Contacte con nosotros hoy mismo para agendar una visita y recibir un presupuesto detallado sin compromiso.
                 </p>
-<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed hover:opacity-90 transition-opacity font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 min-h-[48px] flex items-center justify-center shadow-sm">
-                    Pida presupuesto
-                </button>
+<a class="site-button bg-tertiary-fixed-dim text-on-tertiary-fixed hover:opacity-90 transition-opacity font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 min-h-[48px] flex items-center justify-center shadow-sm" href="/contacto/#solicitar">Pida presupuesto</a>
 </div>
 </section>
 </main>
@@ -266,9 +274,9 @@
                 Poyatos Martínez Pintores
             </div>
 <div class="flex flex-col md:flex-row gap-4 md:gap-8 text-center md:text-left">
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="#">Aviso Legal</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="#">Política de Privacidad</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="#">Contacto</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="/aviso-legal/">Aviso Legal</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="/privacidad/">Política de Privacidad</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="/contacto/">Contacto</a>
 </div>
 <div class="text-secondary dark:text-secondary-fixed text-sm text-center md:text-right">
                 © 2024 Poyatos Martínez Pintores. Todos los derechos reservados.
@@ -279,17 +287,18 @@
 <nav class="bg-surface dark:bg-inverse-surface text-on-primary dark:text-on-primary-fixed font-label-sm text-label-sm fixed bottom-0 w-full z-50 md:hidden bg-surface-container dark:bg-surface-container-highest shadow-md">
 <div class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 px-4 bg-surface">
 <!-- Llamar -->
-<button class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform p-2 w-16">
-<span class="material-symbols-outlined mb-1" data-icon="phone">phone</span>
-<span>Llamar</span>
-</button>
+<a class="site-button flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform p-2 w-16" data-action="call" href="/contacto/#solicitar"><span class="material-symbols-outlined mb-1" data-icon="phone">phone</span><span>Llamar</span></a>
 <!-- WhatsApp -->
-<button class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform p-2 w-16">
-<span class="material-symbols-outlined mb-1" data-icon="chat">chat</span>
-<span>WhatsApp</span>
-</button>
+<a class="site-button flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform p-2 w-16" data-action="whatsapp" href="/contacto/#solicitar"><span class="material-symbols-outlined mb-1" data-icon="chat">chat</span><span>WhatsApp</span></a>
 </div>
 <!-- Spacer for mobile nav -->
 <div class="h-16"></div>
 </nav>
+<script defer src="/assets/site.js"></script>
 </body></html>
+
+
+
+
+
+

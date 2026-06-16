@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  }
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-mobile-menu[hidden],
+.filter-empty[hidden],
+.contact-result[hidden] {
+  display: none;
+}
+
+.site-mobile-menu {
+  border-bottom: 1px solid #c3c7c8;
+}
+
+.site-bottom-nav {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+.site-button {
+  text-decoration: none;
+}
+
+.site-link-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+.work-card[hidden] {
+  display: none;
+}
+
+.contact-field {
+  min-height: 48px;
+}

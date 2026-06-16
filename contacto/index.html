@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto y Presupuesto | Poyatos Martinez Pintores</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/site.css" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#181f21",
+        secondary: "#5c5f60",
+        surface: "#f9f9f9",
+        "surface-container-low": "#f3f3f4",
+        "surface-container": "#eeeeee",
+        "surface-container-highest": "#e2e2e2",
+        "on-surface": "#1a1c1c",
+        "on-surface-variant": "#434749",
+        "outline": "#747879",
+        "outline-variant": "#c3c7c8",
+        "tertiary-container": "#442f00",
+        "on-tertiary-container": "#ba9650",
+        "on-primary": "#ffffff"
+      },
+      fontFamily: {
+        body: ["Inter"],
+        headline: ["Montserrat"]
+      },
+      spacing: {
+        gutter: "24px",
+        "margin-mobile": "16px",
+        "max-width": "1280px"
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant">
+<div class="max-w-max-width mx-auto h-20 px-gutter flex items-center justify-between">
+<a class="font-headline text-2xl font-bold text-primary" href="/">Poyatos Martinez Pintores</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-secondary hover:text-primary" href="/">Inicio</a>
+<a class="text-secondary hover:text-primary" href="/servicios/">Servicios</a>
+<a class="text-secondary hover:text-primary" href="/trabajos/">Trabajos</a>
+<a class="text-secondary hover:text-primary" href="/empresa/#proceso">Proceso</a>
+<a class="text-secondary hover:text-primary" href="/empresa/">Empresa</a>
+<a class="font-semibold text-primary border-b-2 border-primary" href="/contacto/">Contacto</a>
+</nav>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" data-mobile-menu-toggle type="button">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</div>
+<nav class="site-mobile-menu bg-surface px-margin-mobile py-4 md:hidden" hidden id="mobile-menu">
+<div class="grid gap-3">
+<a class="py-2 text-primary" href="/">Inicio</a>
+<a class="py-2 text-primary" href="/servicios/">Servicios</a>
+<a class="py-2 text-primary" href="/trabajos/">Trabajos</a>
+<a class="py-2 text-primary" href="/empresa/#proceso">Proceso</a>
+<a class="py-2 text-primary" href="/empresa/">Empresa</a>
+<a class="py-2 text-primary font-semibold" href="/contacto/">Contacto</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-gutter py-16 md:py-24">
+<div class="max-w-3xl">
+<p class="uppercase tracking-[0.12em] text-sm font-semibold text-secondary mb-4">Contacto</p>
+<h1 class="font-headline text-4xl md:text-5xl font-bold text-primary leading-tight mb-6">Cuente su proyecto y preparemos el siguiente paso</h1>
+<p class="text-lg text-on-surface-variant leading-8">Use este formulario para dejar todos los detalles listos. La solicitud se prepara en pantalla para copiarla o abrirla en su correo con un solo gesto.</p>
+</div>
+</section>
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-gutter pb-20" id="solicitar">
+<div class="grid lg:grid-cols-[1fr_420px] gap-10 items-start">
+<form class="bg-white border border-outline-variant p-6 md:p-8 grid gap-5" data-contact-form>
+<div>
+<label class="block font-semibold mb-2" for="nombre">Nombre</label>
+<input class="contact-field w-full border-outline-variant rounded" id="nombre" name="nombre" placeholder="Nombre y apellidos" required/>
+</div>
+<div class="grid md:grid-cols-2 gap-5">
+<div>
+<label class="block font-semibold mb-2" for="telefono">Telefono</label>
+<input class="contact-field w-full border-outline-variant rounded" id="telefono" name="telefono" placeholder="Telefono de contacto" required/>
+</div>
+<div>
+<label class="block font-semibold mb-2" for="email">Email</label>
+<input class="contact-field w-full border-outline-variant rounded" id="email" name="email" placeholder="email@ejemplo.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-semibold mb-2" for="servicio">Servicio</label>
+<select class="contact-field w-full border-outline-variant rounded" id="servicio" name="servicio">
+<option>Pintura interior</option>
+<option>Pintura exterior y fachadas</option>
+<option>Reformas y rehabilitacion</option>
+<option>Lacados y restauracion</option>
+<option>Tratamiento de suelos</option>
+<option>Otro proyecto</option>
+</select>
+</div>
+<div>
+<label class="block font-semibold mb-2" for="mensaje">Detalles del proyecto</label>
+<textarea class="w-full min-h-[160px] border-outline-variant rounded" id="mensaje" name="mensaje" placeholder="Tipo de espacio, metros aproximados, fechas, estado actual y cualquier detalle importante." required></textarea>
+</div>
+<button class="site-button bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded font-semibold min-h-[48px]" type="submit">Preparar solicitud</button>
+</form>
+<aside class="bg-surface-container-low border border-outline-variant p-6 md:p-8">
+<h2 class="font-headline text-2xl font-semibold mb-4">Acciones rapidas</h2>
+<div class="grid gap-3">
+<a class="site-button border border-primary text-primary px-5 py-3 rounded text-center font-semibold" data-action="call" href="/contacto/#solicitar" id="llamada">Llamar ahora</a>
+<a class="site-button bg-primary text-on-primary px-5 py-3 rounded text-center font-semibold" data-action="whatsapp" href="/contacto/#solicitar" id="whatsapp">Abrir WhatsApp</a>
+<a class="site-button border border-outline text-primary px-5 py-3 rounded text-center font-semibold" href="/trabajos/">Ver trabajos realizados</a>
+</div>
+<p class="text-sm text-on-surface-variant mt-6 leading-6">Cuando se añadan el telefono, WhatsApp o email reales en la configuracion de la web, estos enlaces pasan automaticamente a llamada, WhatsApp y correo directo.</p>
+</aside>
+</div>
+<div class="contact-result mt-8 bg-white border border-outline-variant p-6 md:p-8" data-contact-result hidden>
+<h2 class="font-headline text-2xl font-semibold mb-4">Solicitud preparada</h2>
+<textarea class="w-full min-h-[220px] border-outline-variant rounded mb-4" data-contact-message readonly></textarea>
+<div class="flex flex-col sm:flex-row gap-3">
+<button class="site-button bg-primary text-on-primary px-6 py-3 rounded font-semibold" data-copy-contact type="button">Copiar solicitud</button>
+<a class="site-button border border-outline text-primary px-6 py-3 rounded font-semibold text-center" data-mail-contact href="mailto:">Abrir en mi correo</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-max-width mx-auto px-gutter py-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+<a class="font-headline text-2xl font-bold text-primary" href="/">Poyatos Martinez Pintores</a>
+<nav class="flex flex-wrap gap-5">
+<a class="text-secondary hover:text-primary" href="/aviso-legal/">Aviso Legal</a>
+<a class="text-secondary hover:text-primary" href="/privacidad/">Politica de Privacidad</a>
+<a class="text-secondary hover:text-primary" href="/contacto/">Contacto</a>
+</nav>
+<p class="text-sm text-secondary">© <span data-current-year>2026</span> Poyatos Martinez Pintores.</p>
+</div>
+</footer>
+<script defer src="/assets/site.js"></script>
+</body>
+</html>
