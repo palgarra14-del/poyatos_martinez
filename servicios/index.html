@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicios de Pintura, Decoración y Reformas en Cuenca | Poyatos Martínez Pintores</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#261900",
+                        "on-tertiary-container": "#ba9650",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#191c1d",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdea5",
+                        "secondary": "#5c5f60",
+                        "tertiary-container": "#442f00",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "background": "#f9f9f9",
+                        "surface-tint": "#586062",
+                        "secondary-container": "#e1e3e4",
+                        "on-primary-fixed-variant": "#41484a",
+                        "on-primary-container": "#959c9f",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#dde4e6",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "secondary-fixed-dim": "#c5c7c8",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "primary": "#181f21",
+                        "outline-variant": "#c3c7c8",
+                        "inverse-primary": "#c1c8ca",
+                        "primary-container": "#2d3436",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#454748",
+                        "inverse-surface": "#2f3131",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-low": "#f3f3f4",
+                        "outline": "#747879",
+                        "surface": "#f9f9f9",
+                        "on-secondary-container": "#626566",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed-dim": "#c1c8ca",
+                        "tertiary": "#291b00",
+                        "on-primary-fixed": "#161d1f",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#e1e3e4",
+                        "on-surface-variant": "#434749",
+                        "surface-bright": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-mobile": "64px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "section-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "headline-md-mobile": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .image-zoom:hover img {
+            transform: scale(1.05);
+        }
+        .image-zoom img {
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface text-primary dark:text-primary-fixed font-body-md text-body-md w-full sticky top-0 border-b border-outline-variant dark:border-outline flat no shadows transition-all duration-200 z-50">
+<div class="flex justify-between items-center px-gutter max-w-max-width mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                Poyatos Martínez Pintores
+            </div>
+<div class="hidden md:flex items-center space-x-6">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/">Inicio</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary hover:opacity-80 transition-opacity" href="/servicios/">Servicios</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/trabajos/">Trabajos</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/empresa/#proceso">Proceso</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/empresa/">Empresa</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<button class="text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity">
+                    Llamar ahora
+                </button>
+<button class="bg-primary text-on-primary px-6 py-3 rounded hover:opacity-80 transition-opacity min-h-[48px] flex items-center justify-center font-label-sm text-label-sm">
+                    Pedir presupuesto
+                </button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] min-h-[400px] flex items-center justify-center px-gutter mb-section-mobile md:mb-section-desktop overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Interior painting project" class="w-full h-full object-cover opacity-80" data-alt="A meticulously painted, modern minimalist living room bathed in natural sunlight. The walls are a pristine, smooth white with sharp, perfectly cut-in edges against the modern trim. A professional painter's ladder and a covered drop cloth are neatly arranged in the corner, suggesting ongoing high-quality work. The overall mood is clean, bright, and highly professional, reflecting a premium artisanal approach to interior decorating." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFEksmpDKN3lvt3J2bahmlxhdX0gKUOV_64bYrmgrSPDUwVrzeS22KCI3HuEDXvBjG9lIf9_hM3esBF_Oj3POxmbzsy6roaOztIMTTNH1mQEdrcxmVq6JnM2rNTffG_2hJj7zDR8F58Z6-ETFQf4sD2KD1yRUHymkv0Y0vvmZzJZ6EasYlcyLHcClU_oH28B008aACzv7-jQkGMLq0n4HMS8IZglR2_eFHU3f1do0q6n2r2pYoalUVjA_lZH_ZY_7S01uaWkkTCgs"/>
+<div class="absolute inset-0 bg-primary/40"></div>
+</div>
+<div class="relative z-10 max-w-max-width mx-auto text-center">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-primary mb-6">
+                    Soluciones Integrales para su Vivienda o Negocio
+                </h1>
+<p class="font-body-lg text-body-lg text-inverse-surface max-w-2xl mx-auto mb-8 bg-surface/90 p-4 rounded backdrop-blur-sm">
+                    Servicios de Pintura, Decoración y Reformas en Cuenca. Precisión artesanal y acabados profesionales garantizados.
+                </p>
+<button class="bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded hover:opacity-90 transition-opacity min-h-[48px] font-label-sm text-label-sm inline-flex items-center shadow-md">
+                    Solicitar Valoración Inicial
+                </button>
+</div>
+</section>
+<!-- Main Services Grid -->
+<section class="px-margin-mobile md:px-gutter max-w-max-width mx-auto mb-section-mobile md:mb-section-desktop">
+<div class="mb-12 text-center">
+<h2 class="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-primary mb-4">Nuestros Servicios</h2>
+<div class="w-16 h-1 bg-outline mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Pintura Interior -->
+<div class="group border border-outline-variant rounded bg-surface-container-lowest overflow-hidden flex flex-col image-zoom">
+<div class="h-48 overflow-hidden bg-surface-variant relative">
+<img alt="Pintura Interior" class="w-full h-full object-cover" data-alt="Close up of a professional painter's roller applying a smooth, clean coat of white paint onto a perfectly prepared interior wall. The lighting is bright and evenly distributed, highlighting the flawless texture of the fresh paint. The scene conveys meticulous attention to detail, cleanliness, and the high standards of modern residential interior painting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWmflcfLZQw8C5X_lpe3TwYXQIBmOsMCr9X1ekfrNJggXDAO-E6zPZBBtD5eSED39jsIGgCDR1U8bsnIrkTIaIbyDs2FDUHrGlNfWAjCrWnZMqDYzI6W6FsAS3YHx2dmJdkZmO2uX99du1uLmFthz-EoxfUfjHGewZ189rURXYyH6nHIjRg2zh-9HN7349mDm-fPZ64kVLGHoQTNDkY4g602z1wC2GGwX40vmdOh6awp8GPYnu1paVwiYZxPeSrmERFTSYyzrBT8M"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col bg-surface-container-low">
+<div class="flex items-center mb-3">
+<span class="material-symbols-outlined text-outline mr-2" data-icon="format_paint">format_paint</span>
+<h3 class="font-headline-md text-headline-md text-[20px] text-primary">Pintura Interior</h3>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 flex-grow">
+                            Especialistas en acabados perfectos. Máxima limpieza, protección de mobiliario y preparación exhaustiva de superficies antes de aplicar la pintura.
+                        </p>
+</div>
+</div>
+<!-- Pintura Exterior -->
+<div class="group border border-outline-variant rounded bg-surface-container-lowest overflow-hidden flex flex-col image-zoom">
+<div class="h-48 overflow-hidden bg-surface-variant relative">
+<img alt="Pintura Exterior y Fachadas" class="w-full h-full object-cover" data-alt="A well-maintained modern residential facade featuring a freshly painted, smooth exterior wall in a neutral, weather-resistant tone. The architectural lines are sharp and clean. Sunlight casts strong shadows, emphasizing the durability and high-quality finish of the exterior paint job. The overall aesthetic is professional, reliable, and solidly built." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvm-uJdWMBVgAVn3BSt71j5O1Ce7GtZ8FE8OagyqlUV9EIKhJ6_tj0-98_GocEBpbk_PkulN1oxW3fJlLgVN_ON2mC7EGFnEkWZDiG8V85c27dBeDD6U4frRibo-njqQZd-7zOW89TDAM8pU90JIvgSSsI1bZcwsBASgza1Z1GIFjP0EQ5wSzXxiNulS0u9QHyJZdcmP87hOq8t3QbhDPDHlw_CtUjM8vlK37e2sRZTBSst7sQQZZGx3sNiMB15HeGO2PZTM7_-AI"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col bg-surface-container-low">
+<div class="flex items-center mb-3">
+<span class="material-symbols-outlined text-outline mr-2" data-icon="architecture">architecture</span>
+<h3 class="font-headline-md text-headline-md text-[20px] text-primary">Pintura Exterior y Fachadas</h3>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 flex-grow">
+                            Soluciones duraderas y revestimientos de alta resistencia para proteger y embellecer fachadas contra las inclemencias del tiempo.
+                        </p>
+</div>
+</div>
+<!-- Reformas -->
+<div class="group border border-outline-variant rounded bg-surface-container-lowest overflow-hidden flex flex-col image-zoom">
+<div class="h-48 overflow-hidden bg-surface-variant relative">
+<img alt="Reformas y Rehabilitación" class="w-full h-full object-cover" data-alt="An interior space undergoing professional renovation, showcasing structural framing and pristine new drywall installation. The area is clean and well-organized, with professional tools neatly placed. The lighting highlights the precision of the carpentry and drywall work, representing an integral management approach to high-end residential remodeling and rehabilitation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKzVqn5nseA8-EfLrcoGRJcDWadJ3KL747P8S_R57tjAKmAsGqGyJjlmmvbKn3QOCmG2wTnnBWO6nDSoaTXdaX4FxnovDrX0QkvzZz8fMGV7ttvtB4SdUc76ZjztsTTsDO556pkcSJM1zAsfophBsk0BWmNPk4EhfskP6Qn-A5YU0RzoScT_D2-mSfXiLGarzigfbxj4CtNm_pX1Jj2P9CtKqdy-BHyQ5ghuGKwjfWhQhNUwMlel2YmbacUdd6zp8Zln0zHmKE0Qg"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col bg-surface-container-low">
+<div class="flex items-center mb-3">
+<span class="material-symbols-outlined text-outline mr-2" data-icon="construction">construction</span>
+<h3 class="font-headline-md text-headline-md text-[20px] text-primary">Reformas y Rehabilitación</h3>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 flex-grow">
+                            Gestión integral de proyectos de reforma. Coordinamos todos los gremios para asegurar un resultado final impecable y sin preocupaciones.
+                        </p>
+</div>
+</div>
+<!-- Tratamiento de Suelos -->
+<div class="group border border-outline-variant rounded bg-surface-container-lowest overflow-hidden flex flex-col image-zoom">
+<div class="h-48 overflow-hidden bg-surface-variant relative">
+<img alt="Tratamiento de Suelos" class="w-full h-full object-cover" data-alt="A close-up view of a recently polished hardwood floor reflecting natural light beautifully. The wood grain is rich and detailed, protected by a flawless, clear varnish. The surface is completely smooth, demonstrating expert sanding, varnishing, and floor treatment techniques. The aesthetic is luxurious, warm, and highly professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8W_2Ds2NM51E0BZnaR2ezc8a3ci2bgc_IOcf9GDLcB0CeJRhNsb9U93AfkEweD055eQwSauH_-tfPfkwuzhgb74lSBwxbJSyQPntKvsfsZTM0eEXFiAXkwU1tErPE_tZKylSydl1ufZXgDM-M-J1EEtjQHGBN7AwbdIfrcD5ut3cdMZSNfkimk6s8tPED2-F3RVr543vPBi2QfPjt8kE7njQE7B6yfBQ9bdyjmrzxxkdb9V53OjupdsY09sj6OO7yLf7w-ynP49o"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col bg-surface-container-low">
+<div class="flex items-center mb-3">
+<span class="material-symbols-outlined text-outline mr-2" data-icon="layers">layers</span>
+<h3 class="font-headline-md text-headline-md text-[20px] text-primary">Tratamiento de Suelos</h3>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 flex-grow">
+                            Pulido, barnizado y tratamientos industriales. Restauramos la belleza original de sus suelos con productos de primera calidad.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Section: Lacados -->
+<section class="bg-surface-container-low py-section-mobile md:py-section-desktop border-y border-outline-variant mb-section-mobile md:mb-section-desktop">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<div class="image-zoom rounded overflow-hidden border border-outline-variant shadow-sm bg-surface">
+<img alt="Lacados y Restauración" class="w-full h-[400px] object-cover" data-alt="A master craftsman carefully sanding a vintage wooden cabinet door in a well-lit workshop. The cabinet features intricate details, and the workspace is tidy, reflecting artisanal precision. The scene emphasizes the process of lacquering, varnishing, and restoring furniture to a premium, pristine condition, blending traditional techniques with modern finishing standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEXplSPNwzkIvpg1IfAzdLnw6aUo83eieS_y2liUIXB0VKFLl7etW50z45Fx74HO9m67C_YYH98cjxtumHtO4RLQV1G1RqWBfg8NKGv_lDgv8QcM2K6ZoDiALsOC_oARDMYeeWIE0XlVoxNL4Fmjx4r8u8ElujZlGcC86SMgrR0OytqRzrb9IvPT50J831OVuyJQCgqE6V47wI26jjrsdCQ-ZbaPAFTm2mv-oTo8FV3poxSORnUVsTNKtTqaaGsKXM4QczDMnAnys"/>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-primary mb-6">Lacados y Restauración</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-8">
+                            Devolvemos la vida a sus elementos de madera con técnicas artesanales y acabados modernos que garantizan durabilidad y elegancia.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-on-tertiary-container mr-3 mt-1" data-icon="check_circle">check_circle</span>
+<div>
+<strong class="font-body-md text-body-md text-primary block">Lacado de Puertas y Armarios</strong>
+<span class="text-on-surface-variant text-[14px]">Acabados sedosos y resistentes que modernizan cualquier espacio.</span>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-on-tertiary-container mr-3 mt-1" data-icon="check_circle">check_circle</span>
+<div>
+<strong class="font-body-md text-body-md text-primary block">Barnizado de Madera</strong>
+<span class="text-on-surface-variant text-[14px]">Protección y realce de la veta natural con productos específicos.</span>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-on-tertiary-container mr-3 mt-1" data-icon="check_circle">check_circle</span>
+<div>
+<strong class="font-body-md text-body-md text-primary block">Decapados y Restauración de Muebles</strong>
+<span class="text-on-surface-variant text-[14px]">Técnicas cuidadosas para dar una segunda vida a piezas antiguas y valiosas.</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-gutter mb-section-mobile md:mb-section-desktop">
+<div class="bg-surface-variant border border-outline-variant rounded p-8 md:p-16 text-center shadow-sm">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-headline-md md:text-headline-md text-primary mb-4">¿Listo para transformar su espacio?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl mx-auto">
+                    Confíe en nuestra experiencia y precisión artesanal. Contáctenos para evaluar su proyecto sin compromiso.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<button class="bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded hover:opacity-90 transition-opacity min-h-[48px] font-label-sm text-label-sm w-full sm:w-auto">
+                        Solicite su presupuesto personalizado hoy mismo
+                    </button>
+<button class="border border-outline text-primary px-8 py-4 rounded hover:bg-surface-container transition-colors min-h-[48px] font-label-sm text-label-sm w-full sm:w-auto">
+                        Ver Trabajos Realizados
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest text-primary dark:text-primary-fixed font-body-md text-body-md w-full mt-section-desktop border-t border-outline-variant flat z-40">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter py-section-mobile max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md text-primary mb-6 md:mb-0">
+                Poyatos Martínez Pintores
+            </div>
+<div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 mb-6 md:mb-0">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="#">Aviso Legal</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors" href="#">Contacto</a>
+</div>
+<div class="text-secondary dark:text-secondary-fixed text-sm text-center md:text-right">
+                © 2024 Poyatos Martínez Pintores. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 px-4 bg-surface dark:bg-inverse-surface text-on-primary dark:text-on-primary-fixed font-label-sm text-label-sm md:hidden bg-surface-container dark:bg-surface-container-highest shadow-md transition-transform">
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:bg-secondary-container scale-95 active:scale-90 transition-transform p-2 rounded-lg">
+<span class="material-symbols-outlined mb-1" data-icon="phone">phone</span>
+<span>Llamar</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:bg-secondary-container scale-95 active:scale-90 transition-transform p-2 rounded-lg">
+<span class="material-symbols-outlined mb-1" data-icon="chat">chat</span>
+<span>WhatsApp</span>
+</button>
+</nav>
+</body></html>
