@@ -53,8 +53,8 @@ tailwind.config = {
 <a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/empresa/">Empresa</a>
 </nav>
 <div class="hidden items-center gap-3 md:flex">
-<a class="site-button min-h-[48px] border border-[#181f21] px-4 py-3 text-sm font-semibold text-[#181f21] transition-colors hover:bg-[#eeeeee]" data-action="call" href="/contacto/#solicitar">Llamar ahora</a>
-<a class="site-button min-h-[48px] bg-[#181f21] px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-85" href="/contacto/#solicitar">Pedir presupuesto</a>
+<a class="site-button site-call-button text-sm" data-action="call" href="/contacto/#solicitar"><span class="material-symbols-outlined" aria-hidden="true">call</span><span>Llamar ahora</span></a>
+<a class="site-button site-quote-button text-sm" href="/contacto/#solicitar"><span class="material-symbols-outlined" aria-hidden="true">edit_document</span><span>Pedir presupuesto</span></a>
 </div>
 <button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-[#181f21]" data-mobile-menu-toggle type="button">
 <span class="material-symbols-outlined text-[32px]">menu</span>
@@ -116,7 +116,7 @@ tailwind.config = {
 <aside class="bg-surface-container-low border border-outline-variant p-6 md:p-8">
 <h2 class="font-headline text-2xl font-semibold mb-4">Acciones rapidas</h2>
 <div class="grid gap-3">
-<a class="site-button border border-primary text-primary px-5 py-3 rounded text-center font-semibold" data-action="call" href="/contacto/#solicitar" id="llamada">Llamar ahora</a>
+<a class="site-button site-call-button text-center font-semibold" data-action="call" href="/contacto/#solicitar" id="llamada"><span class="material-symbols-outlined" aria-hidden="true">call</span><span>Llamar ahora</span></a>
 <a class="site-button bg-primary text-on-primary px-5 py-3 rounded text-center font-semibold" data-action="whatsapp" href="/contacto/#solicitar" id="whatsapp">Abrir WhatsApp</a>
 <a class="site-button border border-outline text-primary px-5 py-3 rounded text-center font-semibold" href="/trabajos/">Ver trabajos realizados</a>
 </div>
@@ -147,4 +147,6 @@ tailwind.config = {
 <script defer src="/assets/site.js"></script>
 </body>
 </html>
+
+
 
