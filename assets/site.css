@@ -103,6 +103,10 @@ textarea {
   scroll-margin-top: 96px;
 }
 
+#servicios {
+  scroll-margin-top: 96px;
+}
+
 .contact-field {
   min-height: 48px;
 }
@@ -343,6 +347,14 @@ textarea {
   line-height: 1.35;
 }
 
+.services-hero {
+  margin-bottom: 104px;
+}
+
+.services-hero .home-hero__content {
+  max-width: 790px;
+}
+
 .home-focus {
   background: #f9f9f9;
   border-bottom: 1px solid #c3c7c8;
@@ -447,6 +459,10 @@ textarea {
 }
 
 @media (max-width: 640px) {
+  .services-hero {
+    margin-bottom: 56px;
+  }
+
   .site-final-cta__inner {
     gap: 1.5rem;
     padding: 40px 16px;
