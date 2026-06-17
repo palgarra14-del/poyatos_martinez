@@ -87,6 +87,22 @@ textarea {
   display: none;
 }
 
+.work-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(24, 31, 33, 0.04);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.work-card:hover {
+  border-color: #aeb5b7;
+  box-shadow: 0 16px 36px rgba(24, 31, 33, 0.1);
+  transform: translateY(-3px);
+}
+
+#galeria {
+  scroll-margin-top: 96px;
+}
+
 .contact-field {
   min-height: 48px;
 }
