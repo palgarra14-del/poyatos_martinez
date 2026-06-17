@@ -7,6 +7,7 @@ Sitio web estatico para Poyatos Martinez Pintores, preparado para publicarse en 
 - `/` - portada basada en servicios
 - `/servicios/` - servicios de pintura, decoracion y reformas
 - `/trabajos/` - trabajos realizados
-- `/empresa/` - proceso y empresa
+- `/proceso/` - proceso de trabajo
+- `/empresa/` - historia, valores y empresa
 
 No requiere build: Vercel puede desplegarlo como proyecto estatico.

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
@@ -42,29 +42,32 @@ tailwind.config = {
 </script>
 </head>
 <body class="bg-surface text-on-surface font-body antialiased">
-<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant">
-<div class="max-w-max-width mx-auto h-20 px-gutter flex items-center justify-between">
-<a class="font-headline text-2xl font-bold text-primary" href="/">Poyatos Martinez Pintores</a>
-<nav class="hidden md:flex items-center gap-6">
-<a class="text-secondary hover:text-primary" href="/">Inicio</a>
-<a class="text-secondary hover:text-primary" href="/servicios/">Servicios</a>
-<a class="text-secondary hover:text-primary" href="/trabajos/">Trabajos</a>
-<a class="text-secondary hover:text-primary" href="/empresa/#proceso">Proceso</a>
-<a class="text-secondary hover:text-primary" href="/empresa/">Empresa</a>
-<a class="font-semibold text-primary border-b-2 border-primary" href="/contacto/">Contacto</a>
+<header class="site-header sticky top-0 z-50 bg-[#f9f9f9] text-[#181f21] border-b border-[#c3c7c8]">
+<div class="mx-auto flex h-20 max-w-[1280px] items-center justify-between gap-6 px-6">
+<a class="shrink-0 text-xl font-bold md:text-2xl" href="/" style="font-family: Montserrat, Inter, sans-serif;">Poyatos Martínez Pintores</a>
+<nav class="hidden items-center gap-5 text-sm font-semibold md:flex">
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/">Inicio</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/servicios/">Servicios</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/trabajos/">Trabajos</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/proceso/">Proceso</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/empresa/">Empresa</a>
 </nav>
-<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" data-mobile-menu-toggle type="button">
+<div class="hidden items-center gap-3 md:flex">
+<a class="site-button min-h-[48px] border border-[#181f21] px-4 py-3 text-sm font-semibold text-[#181f21] transition-colors hover:bg-[#eeeeee]" data-action="call" href="/contacto/#solicitar">Llamar ahora</a>
+<a class="site-button min-h-[48px] bg-[#181f21] px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-85" href="/contacto/#solicitar">Pedir presupuesto</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-[#181f21]" data-mobile-menu-toggle type="button">
 <span class="material-symbols-outlined text-[32px]">menu</span>
 </button>
 </div>
-<nav class="site-mobile-menu bg-surface px-margin-mobile py-4 md:hidden" hidden id="mobile-menu">
-<div class="grid gap-3">
-<a class="py-2 text-primary" href="/">Inicio</a>
-<a class="py-2 text-primary" href="/servicios/">Servicios</a>
-<a class="py-2 text-primary" href="/trabajos/">Trabajos</a>
-<a class="py-2 text-primary" href="/empresa/#proceso">Proceso</a>
-<a class="py-2 text-primary" href="/empresa/">Empresa</a>
-<a class="py-2 text-primary font-semibold" href="/contacto/">Contacto</a>
+<nav class="site-mobile-menu bg-[#f9f9f9] px-6 py-4 md:hidden" hidden id="mobile-menu">
+<div class="grid gap-3 text-base font-semibold">
+<a class="py-2 text-[#181f21]" href="/">Inicio</a>
+<a class="py-2 text-[#181f21]" href="/servicios/">Servicios</a>
+<a class="py-2 text-[#181f21]" href="/trabajos/">Trabajos</a>
+<a class="py-2 text-[#181f21]" href="/proceso/">Proceso</a>
+<a class="py-2 text-[#181f21]" href="/empresa/">Empresa</a>
+<a class="py-2 text-[#181f21]" href="/contacto/">Contacto</a>
 </div>
 </nav>
 </header>
@@ -144,3 +147,4 @@ tailwind.config = {
 <script defer src="/assets/site.js"></script>
 </body>
 </html>
+

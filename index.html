@@ -115,36 +115,35 @@
 <link href="/assets/site.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
-<!-- TopNavBar -->
-<nav class="bg-surface dark:bg-surface text-primary dark:text-primary-fixed font-body-md text-body-md w-full sticky top-0 border-b border-outline-variant dark:border-outline flat no shadows transition-all duration-200 z-50">
-<div class="flex justify-between items-center px-gutter max-w-max-width mx-auto h-20">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed" href="/">Poyatos Martínez Pintores</a>
-<div class="hidden md:flex items-center space-x-6">
-<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary hover:opacity-80 transition-opacity" href="/">Inicio</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/servicios/">Servicios</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/trabajos/">Trabajos</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/empresa/#proceso">Proceso</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/empresa/">Empresa</a>
+<header class="site-header sticky top-0 z-50 bg-[#f9f9f9] text-[#181f21] border-b border-[#c3c7c8]">
+<div class="mx-auto flex h-20 max-w-[1280px] items-center justify-between gap-6 px-6">
+<a class="shrink-0 text-xl font-bold md:text-2xl" href="/" style="font-family: Montserrat, Inter, sans-serif;">Poyatos Martínez Pintores</a>
+<nav class="hidden items-center gap-5 text-sm font-semibold md:flex">
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/">Inicio</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/servicios/">Servicios</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/trabajos/">Trabajos</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/proceso/">Proceso</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/empresa/">Empresa</a>
+</nav>
+<div class="hidden items-center gap-3 md:flex">
+<a class="site-button min-h-[48px] border border-[#181f21] px-4 py-3 text-sm font-semibold text-[#181f21] transition-colors hover:bg-[#eeeeee]" data-action="call" href="/contacto/#solicitar">Llamar ahora</a>
+<a class="site-button min-h-[48px] bg-[#181f21] px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-85" href="/contacto/#solicitar">Pedir presupuesto</a>
 </div>
-<div class="hidden md:flex items-center space-x-4">
-<a class="site-button text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" data-action="call" href="/contacto/#solicitar">Llamar ahora</a>
-<a class="site-button bg-primary text-on-primary px-6 py-3 rounded hover:opacity-80 transition-opacity min-h-[48px] flex items-center justify-center font-label-sm text-label-sm" href="/contacto/#solicitar">Pedir presupuesto</a>
-</div>
-<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" data-mobile-menu-toggle type="button">
-<span class="material-symbols-outlined text-[32px]" data-icon="menu">menu</span>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-[#181f21]" data-mobile-menu-toggle type="button">
+<span class="material-symbols-outlined text-[32px]">menu</span>
 </button>
 </div>
-</nav>
-<nav class="site-mobile-menu bg-surface px-margin-mobile py-4 md:hidden" hidden id="mobile-menu">
-<div class="grid gap-3">
-<a class="py-2 text-primary" href="/">Inicio</a>
-<a class="py-2 text-primary" href="/servicios/">Servicios</a>
-<a class="py-2 text-primary" href="/trabajos/">Trabajos</a>
-<a class="py-2 text-primary" href="/empresa/#proceso">Proceso</a>
-<a class="py-2 text-primary" href="/empresa/">Empresa</a>
-<a class="py-2 text-primary font-semibold" href="/contacto/">Contacto</a>
+<nav class="site-mobile-menu bg-[#f9f9f9] px-6 py-4 md:hidden" hidden id="mobile-menu">
+<div class="grid gap-3 text-base font-semibold">
+<a class="py-2 text-[#181f21]" href="/">Inicio</a>
+<a class="py-2 text-[#181f21]" href="/servicios/">Servicios</a>
+<a class="py-2 text-[#181f21]" href="/trabajos/">Trabajos</a>
+<a class="py-2 text-[#181f21]" href="/proceso/">Proceso</a>
+<a class="py-2 text-[#181f21]" href="/empresa/">Empresa</a>
+<a class="py-2 text-[#181f21]" href="/contacto/">Contacto</a>
 </div>
 </nav>
+</header>
 <main>
 <!-- Hero Section -->
 <section id="inicio" class="relative w-full h-[614px] min-h-[400px] flex items-center justify-center px-gutter mb-section-mobile md:mb-section-desktop overflow-hidden">
@@ -306,13 +305,10 @@
             </div>
 </div>
 </footer>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 px-4 bg-surface dark:bg-inverse-surface text-on-primary dark:text-on-primary-fixed font-label-sm text-label-sm md:hidden bg-surface-container dark:bg-surface-container-highest shadow-md transition-transform">
-<a class="site-button flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:bg-secondary-container scale-95 active:scale-90 transition-transform p-2 rounded-lg" data-action="call" href="/contacto/#solicitar"><span class="material-symbols-outlined mb-1" data-icon="phone">phone</span><span>Llamar</span></a>
-<a class="site-button flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:bg-secondary-container scale-95 active:scale-90 transition-transform p-2 rounded-lg" data-action="whatsapp" href="/contacto/#solicitar"><span class="material-symbols-outlined mb-1" data-icon="chat">chat</span><span>WhatsApp</span></a>
-</nav>
 <script defer src="/assets/site.js"></script>
 </body></html>
+
+
 
 
 

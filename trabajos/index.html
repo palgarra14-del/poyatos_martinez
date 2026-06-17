@@ -123,43 +123,35 @@
     </script>
 </head>
 <body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
-<!-- TopNavBar -->
-<header class="bg-surface dark:bg-surface text-primary dark:text-primary-fixed font-body-md text-body-md w-full sticky top-0 border-b border-outline-variant dark:border-outline z-40 transition-all duration-200 hidden md:block">
-<div class="flex justify-between items-center px-gutter max-w-max-width mx-auto h-20">
-<!-- Brand -->
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="/">Poyatos Martínez Pintores</a>
-<!-- Navigation Links -->
-<nav class="hidden md:flex gap-6 items-center">
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/">Inicio</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/servicios/">Servicios</a>
-<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary hover:opacity-80 transition-opacity py-2" href="/trabajos/">Trabajos</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/empresa/#proceso">Proceso</a>
-<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-opacity" href="/empresa/">Empresa</a>
+<header class="site-header sticky top-0 z-50 bg-[#f9f9f9] text-[#181f21] border-b border-[#c3c7c8]">
+<div class="mx-auto flex h-20 max-w-[1280px] items-center justify-between gap-6 px-6">
+<a class="shrink-0 text-xl font-bold md:text-2xl" href="/" style="font-family: Montserrat, Inter, sans-serif;">Poyatos Martínez Pintores</a>
+<nav class="hidden items-center gap-5 text-sm font-semibold md:flex">
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/">Inicio</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/servicios/">Servicios</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/trabajos/">Trabajos</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/proceso/">Proceso</a>
+<a class="text-[#5c5f60] transition-colors hover:text-[#181f21]" href="/empresa/">Empresa</a>
 </nav>
-<!-- Actions -->
-<div class="hidden md:flex gap-4 items-center">
-<a class="site-button text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity font-label-sm text-label-sm uppercase tracking-widest border border-primary px-4 py-2 min-h-[48px] flex items-center justify-center" data-action="call" href="/contacto/#solicitar">Llamar ahora</a>
-<a class="site-button bg-tertiary-fixed-dim text-on-tertiary-fixed hover:opacity-80 transition-opacity font-label-sm text-label-sm uppercase tracking-widest px-6 py-2 min-h-[48px] flex items-center justify-center shadow-sm" href="/contacto/#solicitar">Pedir presupuesto</a>
+<div class="hidden items-center gap-3 md:flex">
+<a class="site-button min-h-[48px] border border-[#181f21] px-4 py-3 text-sm font-semibold text-[#181f21] transition-colors hover:bg-[#eeeeee]" data-action="call" href="/contacto/#solicitar">Llamar ahora</a>
+<a class="site-button min-h-[48px] bg-[#181f21] px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-85" href="/contacto/#solicitar">Pedir presupuesto</a>
 </div>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-[#181f21]" data-mobile-menu-toggle type="button">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
 </div>
-</header>
-<!-- Mobile Header Fallback (simplified for visual consistency since TopNavBar is hidden on mobile) -->
-<header class="bg-surface text-primary w-full sticky top-0 border-b border-outline-variant z-40 md:hidden h-16 flex items-center px-margin-mobile justify-between">
-<div class="font-headline-md-mobile text-headline-md-mobile font-bold tracking-tight">
-            Poyatos Martínez
-        </div>
-<button aria-controls="mobile-menu" aria-expanded="false" class="text-primary" data-mobile-menu-toggle type="button"><span class="material-symbols-outlined text-primary">menu</span></button>
-</header>
-<nav class="site-mobile-menu bg-surface px-margin-mobile py-4 md:hidden" hidden id="mobile-menu">
-<div class="grid gap-3">
-<a class="py-2 text-primary" href="/">Inicio</a>
-<a class="py-2 text-primary" href="/servicios/">Servicios</a>
-<a class="py-2 text-primary" href="/trabajos/">Trabajos</a>
-<a class="py-2 text-primary" href="/empresa/#proceso">Proceso</a>
-<a class="py-2 text-primary" href="/empresa/">Empresa</a>
-<a class="py-2 text-primary font-semibold" href="/contacto/">Contacto</a>
+<nav class="site-mobile-menu bg-[#f9f9f9] px-6 py-4 md:hidden" hidden id="mobile-menu">
+<div class="grid gap-3 text-base font-semibold">
+<a class="py-2 text-[#181f21]" href="/">Inicio</a>
+<a class="py-2 text-[#181f21]" href="/servicios/">Servicios</a>
+<a class="py-2 text-[#181f21]" href="/trabajos/">Trabajos</a>
+<a class="py-2 text-[#181f21]" href="/proceso/">Proceso</a>
+<a class="py-2 text-[#181f21]" href="/empresa/">Empresa</a>
+<a class="py-2 text-[#181f21]" href="/contacto/">Contacto</a>
 </div>
 </nav>
+</header>
 <main class="w-full">
 <!-- Hero Section -->
 <section id="trabajos" class="max-w-max-width mx-auto px-margin-mobile md:px-gutter pt-12 md:pt-24 pb-12">
@@ -283,19 +275,10 @@
             </div>
 </div>
 </footer>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="bg-surface dark:bg-inverse-surface text-on-primary dark:text-on-primary-fixed font-label-sm text-label-sm fixed bottom-0 w-full z-50 md:hidden bg-surface-container dark:bg-surface-container-highest shadow-md">
-<div class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 px-4 bg-surface">
-<!-- Llamar -->
-<a class="site-button flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform p-2 w-16" data-action="call" href="/contacto/#solicitar"><span class="material-symbols-outlined mb-1" data-icon="phone">phone</span><span>Llamar</span></a>
-<!-- WhatsApp -->
-<a class="site-button flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform p-2 w-16" data-action="whatsapp" href="/contacto/#solicitar"><span class="material-symbols-outlined mb-1" data-icon="chat">chat</span><span>WhatsApp</span></a>
-</div>
-<!-- Spacer for mobile nav -->
-<div class="h-16"></div>
-</nav>
 <script defer src="/assets/site.js"></script>
 </body></html>
+
+
 
 
 
