@@ -91,6 +91,104 @@ textarea {
   min-height: 48px;
 }
 
+.site-final-cta {
+  background:
+    linear-gradient(105deg, #151a1a 0%, #202927 58%, #314439 100%);
+  border-bottom: 1px solid rgba(241, 213, 148, 0.24);
+  border-top: 1px solid rgba(241, 213, 148, 0.24);
+  color: #fffaf0;
+  margin-top: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.site-final-cta::before {
+  background: #f1d594;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.site-final-cta__inner {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin: 0 auto;
+  max-width: 1280px;
+  min-height: 280px;
+  padding: 56px 24px 52px;
+}
+
+.site-final-cta__copy {
+  max-width: 720px;
+}
+
+.site-final-cta__eyebrow {
+  color: #f1d594;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 0 0 0.85rem;
+  text-transform: uppercase;
+}
+
+.site-final-cta h2 {
+  color: #ffffff;
+  font-family: Montserrat, Inter, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+.site-final-cta__copy p:last-child {
+  color: rgba(255, 250, 240, 0.82);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 650px;
+}
+
+.site-final-cta__actions {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-width: 280px;
+}
+
+.site-final-cta__actions .site-button {
+  justify-content: center;
+  min-width: 240px;
+  padding-left: 1.35rem;
+  padding-right: 1.35rem;
+}
+
+.site-final-cta__secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #ffffff;
+}
+
+.site-final-cta__secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.68);
+  color: #ffffff;
+}
+
+.site-final-cta__note {
+  color: rgba(255, 250, 240, 0.7);
+  display: block;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .home-hero {
   align-items: center;
   background: #151a1a;
@@ -289,6 +387,21 @@ textarea {
 }
 
 @media (max-width: 980px) {
+  .site-final-cta__inner {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 48px 24px;
+  }
+
+  .site-final-cta__actions {
+    min-width: 0;
+  }
+
+  .site-final-cta__actions .site-button {
+    min-width: 0;
+    width: 100%;
+  }
+
   .home-hero {
     min-height: 540px;
   }
@@ -318,6 +431,25 @@ textarea {
 }
 
 @media (max-width: 640px) {
+  .site-final-cta__inner {
+    gap: 1.5rem;
+    padding: 40px 16px;
+  }
+
+  .site-final-cta h2 {
+    font-size: 29px;
+    line-height: 1.18;
+  }
+
+  .site-final-cta__copy p:last-child {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .site-final-cta__note {
+    text-align: left;
+  }
+
   .home-hero {
     min-height: 520px;
     padding: 54px 16px 40px;
